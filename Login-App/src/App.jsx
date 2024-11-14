@@ -1,11 +1,11 @@
 import Login from './Login'
-
-var isLoggedIn = false;
+import Register from './Register'
+var isLoggedIn = true;
 
 function App(){
 
 return <div className="container">
-{isLoggedIn ? <h1>Hello User</h1> : <Login />}
+{isLoggedIn ? <Register /> : <Login />}
 </div>
 
 
